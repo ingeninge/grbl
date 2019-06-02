@@ -26,6 +26,9 @@
 #ifndef cpu_map_h
 #define cpu_map_h
 
+#ifdef CPU_MAP_ATMEGA2560 // (Arduino Mega 2560) Working @EliteEng
+  #include "cpu_map/cpu_map_atmega2560.h"
+#endif
 
 #ifdef CPU_MAP_ATMEGA328P // (Arduino Uno) Officially supported by Grbl.
 
